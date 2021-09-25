@@ -125,6 +125,74 @@ int main()
 		{
 			std::cout << "Button 16 is being pressed" << std::endl;
 		}
+        if (sf::Joystick::isButtonPressed(0, 17))
+		{
+			std::cout << "Button 17 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 18))
+		{
+			std::cout << "Button 18 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 19))
+		{
+			std::cout << "Button 19 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 20))
+		{
+			std::cout << "Button 20 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 21))
+		{
+			std::cout << "Button 21 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 22))
+		{
+			std::cout << "Button 22 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 23))
+		{
+			std::cout << "Button 23 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 24))
+		{
+			std::cout << "Button 24 is being pressed" << std::endl;
+		}
+        if (sf::Joystick::isButtonPressed(0, 25))
+		{
+			std::cout << "Button 25 is being pressed" << std::endl;
+		}
+		        if (sf::Joystick::isButtonPressed(0, 26))
+		{
+			std::cout << "Button 26 is being pressed" << std::endl;
+		}
+		        if (sf::Joystick::isButtonPressed(0, 27))
+		{
+			std::cout << "Button 27 is being pressed" << std::endl;
+		}
+		        if (sf::Joystick::isButtonPressed(0, 28))
+		{
+			std::cout << "Button 28 is being pressed" << std::endl;
+		}
+		        if (sf::Joystick::isButtonPressed(0, 29))
+		{
+			std::cout << "Button 29 is being pressed" << std::endl;
+		}
+		        if (sf::Joystick::isButtonPressed(0, 30))
+		{
+			std::cout << "Button 30 is being pressed" << std::endl;
+		}
+		        if (sf::Joystick::isButtonPressed(0, 31))
+		{
+			std::cout << "Button 31 is being pressed" << std::endl;
+		}
+
+
+
+
+
+
+
+
 
 
 
