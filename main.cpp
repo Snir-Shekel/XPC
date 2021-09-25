@@ -53,7 +53,6 @@ int main()
 
 
 
-
         GetCursorPos(&xypos);
         SetCursorPos(xypos.x + sf::Joystick::getAxisPosition(0, sf::Joystick::Axis::X)/100, xypos.y + sf::Joystick::getAxisPosition(0, sf::Joystick::Axis::Y)/100);
 
@@ -62,6 +61,9 @@ int main()
 		if (sf::Joystick::isButtonPressed(0, 0))
 		{
 			std::cout << "Button a is being pressed" << std::endl;
+			mouse_event(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0);
+			Sleep(100);
+			mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0);
 		}
 
 		if (sf::Joystick::isButtonPressed(0, 1))
@@ -72,6 +74,9 @@ int main()
 		if (sf::Joystick::isButtonPressed(0, 2))
 		{
 			std::cout << "Button x is being pressed" << std::endl;
+			mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+			Sleep(100);
+			mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 		}
 
         if (sf::Joystick::isButtonPressed(0, 3))
@@ -130,4 +135,22 @@ int main()
 
 
 	}
+
+	getch();
+
 }
+
+/*
+#define MOUSEEVENTF_MOVE 0x0001
+#define MOUSEEVENTF_LEFTDOWN 0x0002
+#define MOUSEEVENTF_LEFTUP 0x0004
+#define MOUSEEVENTF_RIGHTDOWN 0x0008
+#define MOUSEEVENTF_RIGHTUP 0x0010
+#define MOUSEEVENTF_MIDDLEDOWN 0x0020
+#define MOUSEEVENTF_MIDDLEUP 0x0040
+#define MOUSEEVENTF_XDOWN 0x0080
+#define MOUSEEVENTF_XUP 0x0100
+#define MOUSEEVENTF_WHEEL 0x0800
+#define MOUSEEVENTF_VIRTUALDESK 0x4000
+#define MOUSEEVENTF_ABSOLUTE 0x8000
+*/
