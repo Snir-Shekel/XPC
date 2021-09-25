@@ -1,23 +1,40 @@
-#include <SFML/Graphics.hpp>
+#include "SFML/Graphics.hpp"
 #include <iostream>
 
 int main()
 {
 
 
-    if(sf::Joystick::isConnected(0))
-        std::cout <<"Joystick 1 is Connected" ;
-    else
-        std::cout <<"Joystick 1 is not Connected" ;
+	while (true)
+	{
+		sf::Event event;
 
+		while ( window.pollEvent( event ) )
+		{
+			switch (event.type)
+			{
+			case sf::Event::Closed:
+				window.close();
 
+				break;
 
+			}
+		}
 
-    if(sf::Joystick::isButtonPressed(0, 1))
-        std::cout <<"button" ;
-    else if(sf::Joystick::isButtonPressed(0, 2))
-        std::cout <<"button 2" ;
+		if (sf::Joystick::isConnected(0))
+		{
+			//std::cout << "Joystick is connected" << std::endl;
+		}
 
-    return 0;
+		//std::cout << sf::Joystick::ButtonCount << std::endl;
+
+		if (sf::Joystick::isButtonPressed(0, 1))
+		{
+			std::cout << "Button 1 is being pressed" << std::endl;
+		}
+
+		window.clear( );
+
+		window.display( );
+	}
 }
-
