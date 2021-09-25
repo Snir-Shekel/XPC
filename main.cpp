@@ -106,12 +106,12 @@ int main()
 
         if (sf::Joystick::isButtonPressed(0, 8))
 		{
-			std::cout << "Button left stick is being pressed" << std::endl;
+			std::cout << "left stick is being pressed" << std::endl;
 		}
 
         if (sf::Joystick::isButtonPressed(0, 9))
 		{
-			std::cout << "Button right stick is being pressed" << std::endl;
+			std::cout << "right stick is being pressed" << std::endl;
 		}
 
 
