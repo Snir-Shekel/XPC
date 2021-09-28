@@ -136,7 +136,7 @@ int main()
 
 	}
 
-	getch();
+	
 
 }
 
